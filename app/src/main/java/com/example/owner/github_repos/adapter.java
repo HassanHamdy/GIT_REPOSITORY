@@ -50,6 +50,7 @@ public class adapter extends ArrayAdapter {
         viewHolder.name.setText(details.get(position).getName());
         viewHolder.userName.setText("(" + details.get(position).getUsername() + ")");
         viewHolder.description.setText(details.get(position).getDesc());
+        rowView.setTag(viewHolder);
         return rowView;
 
     }

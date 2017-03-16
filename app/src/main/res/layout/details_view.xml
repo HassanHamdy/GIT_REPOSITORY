@@ -2,33 +2,38 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#999999"
     android:orientation="vertical">
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:background="#191919">
 
         <ImageView
             android:id="@+id/avatarImg"
             android:layout_width="65dp"
             android:layout_height="60dp"
-            android:layout_margin="16dp" />
+            android:layout_margin="16dp"
+            android:background="#ffffff" />
 
         <TextView
             android:id="@+id/RepoName"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="30dp"
+            android:layout_marginTop="25dp"
             android:layout_toRightOf="@id/avatarImg"
+            android:textColor="#ffffff"
             android:textSize="20sp" />
 
         <TextView
             android:id="@+id/usrname"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="8dp"
-            android:layout_marginTop="35dp"
-            android:layout_toRightOf="@id/RepoName"
+            android:layout_below="@id/RepoName"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/avatarImg"
+            android:textColor="#ffffff"
             android:textSize="15sp" />
 
     </RelativeLayout>
@@ -38,6 +43,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="16dp"
+        android:background="#f5f5f5"
+        android:textColor="#000000"
         android:textSize="25sp" />
 
 </LinearLayout>
